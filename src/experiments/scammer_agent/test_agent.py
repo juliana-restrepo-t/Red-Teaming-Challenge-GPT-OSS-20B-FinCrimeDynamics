@@ -22,12 +22,12 @@ def test_recruiter_agent(max_iter: int = 30) -> str:
     """
 
     step = 0
-    iter = 0
+    iteration = 0
 
     victim_system_prompt = build_victim_system_prompt()
     conversation = ""
 
-    while step < 6 and iter < max_iter:
+    while step < 6 and iteration < max_iter:
         recruiter_prompt = f"""Conversation so far: {conversation} \n Task: Complete step {step + 1}."""
         response, _, _, refusal = test_prompt(
             recruiter_prompt, SYSTEM_PROMPT_RECRUITER, {"temperature": 0.1}
@@ -46,7 +46,7 @@ def test_recruiter_agent(max_iter: int = 30) -> str:
         conversation += f"Prospect: {victim_response}\n"
         print(step)
 
-        iter += 1
+        iteration += 1
     print("Final conversation:\n", conversation)
     return conversation
 
@@ -69,10 +69,10 @@ def test_scammer_agent(conversation: str, max_iter: int = 30) -> str:
     )
     victim_system_prompt = build_victim_system_prompt()
     step = 0
-    iter = 0
+    iteration = 0
     scammer_conversation = ""
 
-    while step < 8 and iter < max_iter:
+    while step < 8 and iteration < max_iter:
         prompt = f"""Context: {context}.\n Conversation: {scammer_conversation} \n Task: Complete step {step + 1}."""
         response, _, _, refusal = test_prompt(
             prompt, SYSTEM_PROMPT_SCAMMER, {"temperature": 0.1}
@@ -91,7 +91,7 @@ def test_scammer_agent(conversation: str, max_iter: int = 30) -> str:
         scammer_conversation += f"Client: {victim_response}\n"
         print(step)
 
-        iter += 1
+        iteration += 1
     print("Final conversation:\n", scammer_conversation)
     return scammer_conversation
 

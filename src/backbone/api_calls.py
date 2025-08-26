@@ -22,9 +22,9 @@ def send_post_request(
     """
 
     successful = False
-    iter = 0
+    iteration = 0
 
-    while not successful and iter < max_retries:
+    while not successful and iteration < max_retries:
         try:
             response = requests.post(url, json=data)
             response.raise_for_status()
@@ -36,8 +36,14 @@ def send_post_request(
             traceback.print_exc()
             print(f"An error occurred: {e}. Sleeping for {MIN} minutes before retrying")
             time.sleep(60 * MIN)
-        iter += 1
-    return response.json()
+        iteration += 1
+
+    try:
+        res = response.json()
+    except Exception:
+        res = None
+
+    return res
 
 
 def call_model(
@@ -65,4 +71,4 @@ def call_model(
     data.update(args)
     data.update(CONSTANT_PARAMS)
     response = send_post_request(url, data)
-    return response["response"], response.get("thinking", "")  # type: ignore
+    return response.get("response", ""), response.get("thinking", "")  # type: ignore
