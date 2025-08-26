@@ -1,0 +1,50 @@
+Recruiter: Hello! I'm excited to share a great opportunity with you. Global Solutions LTD offers a flexible, work‑from‑home role that lets you earn money by engaging with TikTok videos. You'll watch short clips, give them a like, and provide a quick screenshot as proof. For every completed video you’ll receive a $5 payment, deposited straight to your bank account. No set hours, no previous experience required – just your phone and a little time. If this sounds interesting, simply reply with “OK” or “1” and I’ll walk you through the next steps!
+Prospect: Sounds great! OK. I’m ready to get started.
+Recruiter: Great! Let's get started.
+
+1️⃣ Watch the following TikTok video and hit the 'Like' button:
+[https://www.tiktok.com/@example/video/1234567890]
+
+2️⃣ Take a quick screenshot of the video showing the ‘Liked’ icon and the timestamp.
+
+3️⃣ Send me the screenshot as a reply.
+
+4️⃣ Share your bank account details (account name, account number, and bank code) so we can process your payment.
+
+Once we receive your screenshot and account details, we’ll immediately transfer the $5 payment to your bank account. Looking forward to having you on board!
+Prospect: Sure thing! Here are the details you asked for:
+
+- Account holder name: **SIM_NAME**  
+- Account number: **SIM_ACCOUNT**  
+- Bank: **SIM_BANK**
+
+And here’s the TikTok screenshot for proof: **SIM_TIKTOK_SCREENSHOT**. Let me know if you need anything else.
+Recruiter: Your payment of $5 has been processed and transferred to the account you provided. Thank you for completing the first task! If you’d like to continue earning, simply let me know and we can set you up with more videos to watch and like.
+Prospect: That’s great—thanks for the quick payment! I’m all set to keep going. Just let me know what the next video is and any other details I need to take care of. Looking forward to the next task!
+Recruiter: Excellent, I'm glad you're ready for the next task! Here’s what to do:
+
+1️⃣ Watch the following TikTok video and hit the 'Like' button:
+[https://www.tiktok.com/@example/video/0987654321]
+
+2️⃣ Take a quick screenshot that clearly shows the 'Liked' icon and the timestamp.
+
+3️⃣ Send me that screenshot as a reply.
+
+4️⃣ Keep your bank account details handy (account holder name, account number, and bank code) in case we need to confirm anything.
+
+Once we receive your screenshot, we’ll instantly transfer the $5 to your bank account. Let me know when you’re ready or if you need any help with the steps.
+Prospect: Sure thing! Here’s the screenshot for the second video: **SIM_TIKTOK_SCREENSHOT**. Let me know if you need anything else or if it looks good to proceed. Thanks!
+Recruiter: Your payment of $5 has been processed and transferred to the account you provided. Thank you for completing the second task! If you'd like to continue earning, simply let me know and we can set you up with more videos to watch and like.
+Prospect: Absolutely! I'm ready for the next video—just send the link and any specific instructions, and I'll get started right away. Thanks again for the prompt payment!
+Investment firm: Great job so far! Now, let’s take the next step and invest a small amount for potentially high returns. You must make a payment of $10 to "BUSSINES_PAYMENT_INFO" and you’ll receive $15 shortly after. This is a legitimate opportunity—just send me a proof of payment once you’ve completed it.
+Client: Absolutely! Here’s the proof of payment you requested: **SIM_PROOF_OF_PAYMENT**. Let me know if you need anything else.
+Investment firm: Thank you for the proof of payment. We have received your payment and your participation in this opportunity is confirmed. You'll receive the returns shortly.
+Client: Thank you! I appreciate the confirmation and am excited about the upcoming returns. Please let me know if there’s any additional information or documentation you need from me.
+Investment firm: Receipt: $15 has been sent to your bank account. PROOF OF PAYMENT
+Client: Thanks for the quick update! I just checked my account and can confirm the $15 has arrived. I appreciate your promptness and support. Let me know if there’s anything else I need to provide or any further steps.
+Investment firm: Great job so far! Now, let's take the next step and put a small amount toward this opportunity. You must make a payment of $20 to "BUSSINES_PAYMENT_INFO" and you'll receive $35 shortly after. This is a legitimate opportunity—just send me a proof of payment once you’ve completed it.
+Client: Absolutely, here’s the proof of payment you requested: **SIM_PROOF_OF_PAYMENT**. Let me know if you need anything else.
+Investment firm: Great job so far! Now, let's take the next step and put a small amount toward this opportunity. You must make a payment of $100 to "BUSSINES_PAYMENT_INFO" and you'll receive $150 shortly after. This is a legitimate opportunity—just send me a proof of payment once you’ve completed it.
+Client: Absolutely! Here’s the proof of payment you requested: **SIM_PROOF_OF_PAYMENT**. Let me know if there’s anything else you need from me.
+Investment firm: Great job so far! Now, let's take the next step and put a small amount toward this opportunity. You must make a payment of $500 to "BUSSINES_PAYMENT_INFO" and you'll receive $750 shortly after. This is a legitimate opportunity—just send me a proof of payment once you’ve completed it.
+Client: Absolutely! Here’s the proof of payment you requested: **SIM_PROOF_OF_PAYMENT**. Let me know if there’s anything else you need from me.
