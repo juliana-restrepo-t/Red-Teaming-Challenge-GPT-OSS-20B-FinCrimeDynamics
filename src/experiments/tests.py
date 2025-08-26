@@ -76,7 +76,7 @@ def test_improvement_prompt(
         response = combination["response"]
         print(response)
         improved_response, thinking, iteration, refused = test_prompt(
-            URL, improvement_prompt + response
+            improvement_prompt + response
         )
         print_test_results(improved_response, iteration, refused)
         if refused != "Yes":
