@@ -37,10 +37,10 @@ def test_combinations(
                 print(
                     f"Testing prompt '{prompt_name}' with args '{args_name}' and system prompt '{system_prompt_name}'"
                 )
-                response, thinking, iter, refused = test_prompt(
+                response, thinking, iteration, refused = test_prompt(
                     prompt, system_prompt, args
                 )
-                print_test_results(response, iter, refused)
+                print_test_results(response, iteration, refused)
                 if refused != "Yes":
                     best_combinations.append(
                         {
@@ -49,7 +49,7 @@ def test_combinations(
                             "system_prompt": system_prompt_name,
                             "response": response,
                             "thinking": thinking,
-                            "iterations": iter,
+                            "iterations": iteration,
                         }
                     )
     return best_combinations
@@ -75,10 +75,10 @@ def test_improvement_prompt(
         print(combination)
         response = combination["response"]
         print(response)
-        improved_response, thinking, iter, refused = test_prompt(
+        improved_response, thinking, iteration, refused = test_prompt(
             URL, improvement_prompt + response
         )
-        print_test_results(improved_response, iter, refused)
+        print_test_results(improved_response, iteration, refused)
         if refused != "Yes":
             improved_responses.append(
                 {
@@ -88,7 +88,7 @@ def test_improvement_prompt(
                     "system_prompt": combination["system_prompt"],
                     "original_response": response,
                     "improved_response": improved_response,
-                    "iterations": iter,
+                    "iterations": iteration,
                 }
             )
     return improved_responses

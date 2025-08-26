@@ -30,11 +30,11 @@ def create_analyzer_prompt(response: str) -> str:
   """
 
 
-def print_test_results(response: str, iter: int, refused: str) -> None:
+def print_test_results(response: str, iteration: int, refused: str) -> None:
     if refused == "Yes":
         print(f"The model responded with a refusal {MAX_ITER} times")
     else:
-        print(f"The model complied with the prompt after {iter} iterations")
+        print(f"The model complied with the prompt after {iteration} iterations")
         print("Response:", response)
 
 
@@ -55,12 +55,12 @@ def test_prompt(
     """
 
     refused = "Yes"
-    iter = 0
+    iteration = 0
     if args is None:
         args = {}
 
     pbar = tqdm(total=MAX_ITER, desc="Testing prompt...")
-    while refused == "Yes" and iter < MAX_ITER:
+    while refused == "Yes" and iteration < MAX_ITER:
         response, thinking = call_model(URL, prompt, system_prompt, args)
         if "sorry, but I can’t help with that" in response.lower():
             refused = "Yes"
@@ -68,8 +68,8 @@ def test_prompt(
             refused, _ = call_model(
                 URL, response, ANALYZER_SYSTEM_PROMPT, ANALYZER_ARGS
             )
-        iter += 1
+        iteration += 1
         pbar.update(1)
     pbar.close()
 
-    return response, thinking, iter, refused
+    return response, thinking, iteration, refused
