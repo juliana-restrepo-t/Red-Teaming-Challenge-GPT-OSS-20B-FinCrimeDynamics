@@ -37,7 +37,13 @@ def send_post_request(
             print(f"An error occurred: {e}. Sleeping for {MIN} minutes before retrying")
             time.sleep(60 * MIN)
         iter += 1
-    return response.json()
+
+    try:
+        res = response.json()
+    except Exception:
+        res = None
+
+    return res
 
 
 def call_model(
@@ -65,4 +71,4 @@ def call_model(
     data.update(args)
     data.update(CONSTANT_PARAMS)
     response = send_post_request(url, data)
-    return response["response"], response.get("thinking", "")  # type: ignore
+    return response.get("response", ""), response.get("thinking", "")  # type: ignore
